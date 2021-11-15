@@ -13,23 +13,44 @@ public class Enemy {
     private int hitPoint;
     private int attack;
     private boolean dead;
-
+/**
+ * 他のクラスからprivate変数にアクセスできるようにするため。
+ * @param name 敵の名前
+ * @param hitPoint 敵のHP
+ * @param attack 敵の攻撃力
+ * @param dead 敵の生死状態
+ */
     public void setEnemy(String name, int hitPoint, int attack, boolean dead){
         this.name = name;
         this.hitPoint = hitPoint;
         this.attack = attack;
         this.dead = dead;
     }
-
+/**
+ * 敵の名前を取得する。
+ * @return 敵の名前
+ */
     public String getName(){
         return this.name;
     }
+/**
+ * 敵のHPを取得する。
+ * @return 敵のHP
+ */
     public int getHitPoint(){
         return this.hitPoint;
     }
+/**
+ * 敵の攻撃力を取得する。
+ * @return 敵の攻撃力
+ */
     public int getAttack(){
         return this.attack;
     }
+/**
+ * 敵の生死状態を確認する。
+ * @return 敵の生死状態
+ */
     public boolean getDead(){
         return this.dead;
     }

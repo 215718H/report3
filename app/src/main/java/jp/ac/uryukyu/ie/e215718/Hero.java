@@ -13,23 +13,44 @@ public class Hero {
     private int hitPoint;
     private int attack;
     private boolean dead;
-
+/**
+ * 他のクラスからprivate変数にアクセスできるようにするため。
+ * @param name ヒーローの名前
+ * @param hitPoint ヒーローのHP
+ * @param attack ヒーローの攻撃力
+ * @param dead ヒーローの生死状態
+ */
     public void setHero(String name, int hitPoint, int attack, boolean dead){
         this.name = name;
         this.hitPoint = hitPoint;
         this.attack = attack;
         this.dead = dead;
     }
-
+/**
+ * ヒーローの名前を取得する。
+ * @return ヒーローの名前
+ */
     public String getName(){
         return this.name;
     }
+/**
+ * ヒーローのHPを取得する。
+ * @return ヒーローのHP
+ */
     public int getHitPoint(){
         return this.hitPoint;
     }
+/**
+ * ヒーローの攻撃力を取得する。
+ * @return ヒーローの攻撃力
+ */
     public int getAttack(){
         return this.attack;
     }
+/**
+ * ヒーローの生死状態を確認する。
+ * @return ヒーローの生死状態
+ */
     public boolean getDead(){
         return this.dead;
     }
